@@ -28,7 +28,7 @@ body {
 
 #logo:hover {
   color: #19B3B5;
-  background-color: #f8f8f8f8;
+  background-color: #f8f8f8;
   border-left: 10px solid #19B3B5;
 }
 
@@ -221,7 +221,6 @@ body {
   margin-right: 310px;
   width: -moz-available;
   width: -webkit-fill-available;
-  width: fill-available;
 }
 
 .right-content {
@@ -234,7 +233,6 @@ body {
 .budget-table{
   width: -moz-available;
   width: -webkit-fill-available;
-  width: fill-available;
 }
 .budget-table table, th, td {
   border-left: 1px solid #eee;
@@ -633,8 +631,7 @@ input:focus:-ms-input-placeholder {
     width: 70%;
     padding: 10%;
     margin-top: 70px;
-    border-left: 5% solid #398182;
-    border-right: 5% solid #398182;
+    border-left: 5px solid #398182;
+    border-right: 5px solid #398182;
   }
-
 }
