@@ -10,3 +10,4 @@ RewriteRule dodaj-przychod add-income.html
 RewriteRule przegladaj-bilans budget.html
 RewriteRule rejestracja registration.html
 RewriteRule zaloguj login.html
+RewriteRule ustawienia setings.html
