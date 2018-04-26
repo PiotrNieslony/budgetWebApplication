@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title></title>
+
+	<meta name="description" content="Opis w Google" />
+	<meta name="keywords" content="słowa, kluczowe, wypisane, po, porzecinku" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="jquery/jquery-ui.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+
+</head>
+
+<body>
+		<div class="container">
+			<div class="header">
+				<header>
+				<h1 id="logo"><i>$</i> Your<span>Budget<span></h1>
+				</header>
+			</div>
+			<div class="sidebar">
+				<span class="switcher"><i class="icon-left-open"></i></span>
+				<nav>
+					<div class="main-menu">
+						<ul>
+							<li><a href="dodaj-przychod">Dodaj przychód</a></li>
+							<li><a href="dodaj-wydatek">Dodaj wydatek</a></li>
+							<li><a href="przegladaj-bilans">Przeglądaj bilans</a></li>
+							<li><a href="#">Ustawienia</a></li>
+							<li><a href="zaloguj">Wyloguj</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="content">
+				<main>
+					<header>
+						<h1>Dodaj wydatek</h1>
+					</header>
+					<div>
+						<form>
+							<div class="item-form-left">
+								<div class="thirty-percent">
+									<strong>Kwota</strong> <input id="amount" type="text" pattern="(^\d+(\.|\,)\d{2}$)"/>
+								</div>
+								<div class="thirty-percent">
+									<strong>Data</strong> <input class="date" type="text" placeholder="RRRR-MM-DD" required
+									pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"
+									title="Wpisz datę w formacie YYYY-MM-DD"/>
+								</div>
+								<diV class="thirty-percent">
+									<strong>Sposób płatności</strong>
+									<select>
+										<option value="cash-payment">gotówka</option>
+										<option value="card-payment">karta</option>
+										<option value="bank-transfer">przelew</option>
+									</select>
+								</div>
+								<div style="clear:both"></div>
+								<div>
+									<strong>Kategoria</strong>
+
+									<label><input type="radio" name="category" value="food" /> Jedzenie</label>
+									<label><input type="radio" name="category" value="home" /> Mieszkanie </label>
+									<label><input type="radio" name="category" value="transport" /> Transport </label>
+									<label><input type="radio" name="category" value="telecommunication" /> Telekomunikacja</label>
+									<label><input type="radio" name="category" value="Healthcare" /> Opieka zdrowotan</label>
+									<label><input type="radio" name="category" value="clothes" /> Ubrania</label>
+									<label><input type="radio" name="category" value="hygiene" /> Higiena</label>
+									<label><input type="radio" name="category" value="donation" /> Darowizna</label>
+									<label><input type="radio" name="category" value="other-expenses" /> Inne wydatki</label>
+								</div>
+								<div>
+									<strong>Komentarz:</strong>
+									<input type="text" />
+								</div>
+								<div style="clear:both"></div>
+								<button type="botton">Dodaj</button>
+								<button type="botton">Anuluj</button>
+								<div style="clear:both"></div>
+							</div>
+						</form>
+					</div>
+				</main>
+				<div style="clear:both"></div>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+<script src="jquery/jquery-3.3.1.min.js"	type="text/javascript"></script>
+<script src="jquery/jquery-ui.min.js"	type="text/javascript"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="main.js"	type="text/javascript"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
